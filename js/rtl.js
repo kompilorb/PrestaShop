@@ -25,7 +25,7 @@ $(document).ready(function () {
                     styles[makeGeneralRTL(i)] = makeValueRTL(i, $.trim(s[1]));
                 }
                 $(this).removeAttr("style");
-                $(this).css(styles);
+                $(this).attr('style', style)
             }
         }
     });
